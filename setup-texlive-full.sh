@@ -2,7 +2,7 @@
 
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
-tar xf install-tl-unx.tar
+tar xf install-tl-unx.tar.gz
 cd install-tl-20210515
 
 
