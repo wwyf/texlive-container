@@ -1,7 +1,9 @@
-FROM ubuntu
+FROM ubuntu:20.04
 
-COPY . .
+WORKDIR /install
 
-RUN setup.sh
+ADD . /install
+
+RUN ./setup.sh
 
 # ENTRYPOINT ["/root/entrypoint.sh"]
