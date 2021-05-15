@@ -4,6 +4,8 @@ WORKDIR /install
 
 ADD . /install
 
-RUN ./setup.sh
+RUN ./setup-texlive-full.sh
+
+RUN ./setup-fonts.sh
 
 # ENTRYPOINT ["/root/entrypoint.sh"]
