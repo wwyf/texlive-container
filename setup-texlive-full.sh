@@ -3,7 +3,7 @@
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
 tar xf install-tl-unx.tar.gz
-cd install-tl-20210515
+cd install-tl-20*
 
 
 printf "I\n" | ./install-tl  -no-gui 
