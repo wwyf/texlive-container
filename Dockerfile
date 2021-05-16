@@ -3,14 +3,14 @@ FROM texlive/texlive:latest
 
 WORKDIR /install
 
-# COPY ./setup-deps.sh  /install
+COPY ./setup-deps.sh  /install
 
-# RUN ./setup-deps.sh
+RUN ./setup-deps.sh
 
 
-# COPY ./setup-texlive-full.sh /install
+COPY ./setup-texlive-full.sh /install
 
-# RUN ./setup-texlive-full.sh
+RUN ./setup-texlive-full.sh
 
 
 COPY ./setup-fonts.sh  /install
