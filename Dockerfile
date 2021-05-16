@@ -2,11 +2,17 @@ FROM ubuntu:20.04
 
 WORKDIR /install
 
-ADD . /install
+COPY ./setup-deps.sh  /install
 
 RUN ./setup-deps.sh
 
+
+COPY ./setup-texlive-full.sh /install
+
 RUN ./setup-texlive-full.sh
+
+
+COPY ./setup-fonts.sh  /install
 
 RUN ./setup-fonts.sh
 
