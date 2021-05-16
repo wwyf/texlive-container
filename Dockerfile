@@ -6,7 +6,7 @@ ADD . /install
 
 RUN ./setup-deps.sh
 
-RUN ./setup-texlive-full.sh
+# RUN ./setup-texlive-full.sh
 
 RUN ./setup-fonts.sh
 
