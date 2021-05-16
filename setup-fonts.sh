@@ -3,7 +3,7 @@
 apt-get update
 
 export DEBIAN_FRONTEND="noninteractive"
-export TZ="Europe/London"
+export TZ="Asia/Shanghai"
 
 
 apt-get install -y language-pack-zh*
